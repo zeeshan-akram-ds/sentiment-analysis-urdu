@@ -25,7 +25,7 @@ st.markdown(
 # ----------------------
 @st.cache_resource
 def load_model():
-    model_path = "./final_model"  
+    model_path = "Zeeshan7866/sentiment_analysis_model"
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
     clf = pipeline("text-classification", model=model, tokenizer=tokenizer, return_all_scores=True)
@@ -177,3 +177,4 @@ st.markdown(
     "<p style='text-align: center; font-size:14px; color:#888;'>Built with Hugging Face 🤗 Transformers & Streamlit 🚀</p>", 
     unsafe_allow_html=True
 )
+
