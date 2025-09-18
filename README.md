@@ -45,6 +45,7 @@ The dataset used contains **Urdu and Roman Urdu reviews**, collected from multip
 - **Preprocessing:** Cleaning, normalization, and train/test splitting  
 
 data is shared in multiple files.
+
 ---
 
 ## Model Information  
@@ -52,7 +53,36 @@ data is shared in multiple files.
 - **Fine-tuned on:** Custom Urdu + Roman Urdu dataset  
 - **Task:** Text Classification (3 labels: Positive, Neutral, Negative)  
 - **Hosted on Hugging Face Hub:**  
-  👉 [`Zeeshan7866/sentiment_analysis_model`](https://huggingface.co/Zeeshan7866/sentiment_analysis_model)  
+  👉 [`Zeeshan7866/sentiment_analysis_model`](https://huggingface.co/Zeeshan7866/sentiment_analysis_model)
+  
+---
+### Model Performance
+
+The fine-tuned model was evaluated on a held-out test set of Urdu + Roman Urdu reviews.
+
+| Metric | Score |
+| :--- | :--- |
+| Accuracy | 0.79 |
+| F1 (Macro) | 0.78 |
+| Precision | 0.80 |
+| Recall | 0.77 |
+
+**Training Details:**
+
+* **Training:** 3 epochs
+* **Base model:** bert-base-multilingual-cased
+* **Optimizer:** AdamW
+* **Loss function:** CrossEntropyLoss
+
+---
+
+### Training Progress
+
+| Epoch | Training Loss | Validation Loss | Accuracy | F1 Macro |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 0.7019 | 0.6381 | 0.7611 | 0.7557 |
+| 2 | 0.4599 | 0.6518 | 0.7830 | 0.7793 |
+| 3 | 0.3846 | 0.7337 | 0.7902 | 0.7853 |
 
 ### Screenshots
 ### 1. Homepage  
