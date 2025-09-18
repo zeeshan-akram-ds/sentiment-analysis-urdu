@@ -55,6 +55,17 @@ data is shared in multiple files.
   👉 [`Zeeshan7866/sentiment_analysis_model`](https://huggingface.co/Zeeshan7866/sentiment_analysis_model)  
 
 ### Screenshots
+### 1. Homepage  
+![Homepage](Screenshots/app_interface.png)  
+
+### 2. Short Review Analysis  
+![Short Review](Screenshots/prediction_example.png)  
+
+### 3. Long Review Analysis (Sentence-Level)  
+![Long Review](Screenshots/long_pred_flow.png)  
+
+### 4. Overall Sentiment Summary  
+![Overall Summary](Screenshots/long_text_prediction.png)  
 
 ---
 
@@ -62,7 +73,7 @@ data is shared in multiple files.
 #### 1. Clone Repository
 ```
 git clone https://github.com/zeeshan-akram-ds/sentiment-analysis_urdu.git
-cd urdu-roman-sentiment-analysis
+cd sentiment-analysis_urdu
 ```
 #### 2. Install Dependencies
 ```
