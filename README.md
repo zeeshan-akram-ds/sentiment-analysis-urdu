@@ -19,8 +19,9 @@ The app is designed to:
 ## Features  
 - ✅ Handles **Urdu + Roman Urdu** text input  
 - ✅ **Sentence-level breakdown** for long reviews  
-- ✅ **Automatic text splitting** (long text → smaller chunks)  
-- ✅ **Visual sentiment charts** (compact bar plots with highlighted scores)  
+- ✅ **Automatic smart splitting** (punctuation + Urdu/Roman connectors like *لیکن*, *مگر*, *but*, etc.)  
+- ✅ **Visual sentiment charts** (compact bar plots with scores inside bars)  
+- ✅ **Sentiment strength detection** (e.g., Strongly Positive, Slightly Negative, Weak Neutral)  
 - ✅ Shows both **detailed per-sentence results** and **overall sentiment summary**  
 - ✅ Built with **Hugging Face Transformers** + **Streamlit**  
 
